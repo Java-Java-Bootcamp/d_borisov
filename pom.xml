@@ -31,7 +31,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>ru.otus.java.arrays.Application</mainClass>
+                            <mainClass>ru.otus.java.array.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
