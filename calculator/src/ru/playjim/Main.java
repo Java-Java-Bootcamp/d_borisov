@@ -9,9 +9,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String[] operations = new String[]{"+", "-", "*", "/"};
         System.out.println("Введите первое слагаемое: ");
-        int a = input();
+        int a = inputNumber();
         System.out.println("Введите второе слагаемое: ");
-        int b = input();
+        int b = inputNumber();
         System.out.println("Выберите номер операции: ");
         for (int i = 0; i < operations.length; i++) {
             System.out.println((i + 1) + ". " + operations[i]);
@@ -28,6 +28,7 @@ public class Main {
                 break;
             case "4":
                 division(a, b);
+                break;
             default:
                 System.out.println("Ошибка: операция не известна");
                 break;
@@ -43,14 +44,14 @@ public class Main {
     }
 
     public static void division(int a, int b) {
-        System.out.println(a + "/" + b + "=" + (a / b));
+        System.out.println(a + "/" + b + "=" + ((float) a / (float) b));
     }
 
     static void multiply(int a, int b) {
         System.out.println(a + "*" + b + "=" + (a * b));
     }
 
-    public static int input() {
+    public static int inputNumber() {
         int x;
         do {
             try {
