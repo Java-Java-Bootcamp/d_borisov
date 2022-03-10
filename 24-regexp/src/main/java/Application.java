@@ -19,5 +19,6 @@ public class Application {
                 System.out.println("i don't know");
             }
         }
-    }
+    }//TODO: закончить валидаторы email, number(1.23, 123, -74, -74.123e44)
+    //TODO: сделать тесты junit
 }
