@@ -4,11 +4,6 @@ public class CustomArray implements Operations {
     private int[] items = new int[5];
     private int size = 0;
 
-    CustomArray() {
-    }
-
-    //[1,2,xx,3,4,5]
-    //[1,2,3,4,5,0]
     @Override
     public void insert(int value, int index) {
         if (index >= size && index < 0 ) throw new ArrayIndexOutOfBoundsException();
